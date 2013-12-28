@@ -3,66 +3,70 @@
   <head>
     <title>TV Commande</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="stylesheets/main.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="col-sm-4 col-sm-offset-4">
-        <div class="row">
-          <div class="btn-group">
-            <span class="btn btn-default btn-lg btn-info" onclick="performAction('info')">Info</span>
-            <span class="btn btn-default btn-lg btn-danger" onclick="performAction('return')">Retour</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <span class="btn btn-default btn-lg btn-block" onclick="performAction('1')">1</span>
-          </div>
-          <div class="col-sm-4">
-            <span class="btn btn-default btn-lg btn-block" onclick="performAction('2')">2</span>
-          </div>
-          <div class="col-sm-4">
-            <span class="btn btn-default btn-lg btn-block" onclick="performAction('3')">3</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <span class="btn btn-default btn-lg btn-block" onclick="performAction('4')">4</span>
-          </div>
-          <div class="col-sm-4">
-            <span class="btn btn-default btn-lg btn-block" onclick="performAction('5')">5</span>
-          </div>
-          <div class="col-sm-4">
-            <span class="btn btn-default btn-lg btn-block" onclick="performAction('6')">6</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <span class="btn btn-default btn-lg btn-block" onclick="performAction('7')">7</span>
-          </div>
-          <div class="col-sm-4">
-            <span class="btn btn-default btn-lg btn-block" onclick="performAction('8')">8</span>
-          </div>
-          <div class="col-sm-4">
-            <span class="btn btn-default btn-lg btn-block" onclick="performAction('9')">9</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
+      <div class="row">
+        <div class="col-md-3 col-sm-5 pull-center float-none">
+          <div class="row">
             <div class="btn-group">
-              <span class="btn btn-default btn-lg" onclick="performAction('volMinus')">-</span>
-              <span class="btn btn-default btn-lg" onclick="performAction('volPlus')">+</span>
+              <span class="btn btn-info btn-lg" onclick="performAction('info')">Info</span>
+              <span class="btn btn-danger btn-lg" onclick="performAction('return')">Retour</span>
             </div>
           </div>
-          <div class="col-sm-4">
-            <span class="btn btn-default btn-lg btn-block" onclick="performAction('0')">0</span>
+          <div class="row">
+            <div class="col-sm-4 col-xs-4">
+              <span class="btn btn-default btn-lg btn-block" onclick="performAction('1')">1</span>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <span class="btn btn-default btn-lg btn-block" onclick="performAction('2')">2</span>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <span class="btn btn-default btn-lg btn-block" onclick="performAction('3')">3</span>
+            </div>
           </div>
-          <div class="col-sm-4">
-            <div class="btn-group">
-              <span class="btn btn-default btn-lg" onclick="performAction('pMinus')">P-</span>
-              <span class="btn btn-default btn-lg" onclick="performAction('pPlus')">P+</span>
-              <span class="btn btn-default btn-lg" onclick="performAction('ok')">OK</span>
+          <div class="row">
+            <div class="col-sm-4 col-xs-4">
+              <span class="btn btn-default btn-lg btn-block" onclick="performAction('4')">4</span>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <span class="btn btn-default btn-lg btn-block" onclick="performAction('5')">5</span>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <span class="btn btn-default btn-lg btn-block" onclick="performAction('6')">6</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-xs-4">
+              <span class="btn btn-default btn-lg btn-block" onclick="performAction('7')">7</span>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <span class="btn btn-default btn-lg btn-block" onclick="performAction('8')">8</span>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <span class="btn btn-default btn-lg btn-block" onclick="performAction('9')">9</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-xs-4">
+              <div class="btn-group">
+                <span class="btn btn-default btn-lg" onclick="performAction('volMinus')">-</span>
+                <span class="btn btn-default btn-lg" onclick="performAction('volPlus')">+</span>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <span class="btn btn-default btn-lg btn-block" onclick="performAction('0')">0</span>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+              <div class="btn-group">
+                <span class="btn btn-default btn-lg" onclick="performAction('pMinus')">P-</span>
+                <span class="btn btn-default btn-lg" onclick="performAction('pPlus')">P+</span>
+                <span class="btn btn-default btn-lg" onclick="performAction('ok')">OK</span>
+              </div>
             </div>
           </div>
         </div>

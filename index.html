@@ -5,67 +5,94 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="stylesheets/main.css" />
+    <link rel="stylesheet" href="bower_components/flat-ui/css/flat-ui.css" />
+    <link rel="stylesheet" href="stylesheets/main_css_classes/main.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-5 pull-center float-none">
+    <div class="container max-height">
+      <div class="row max-height">
+        <div class="col-md-3 col-sm-5 pull-center float-none palette-clouds huge-padding max-height">
+          <h1 class="mbl text-center orange">TV d'Orange</h1>
+
+          <form role="form">
+            <div class="form-group">
+              <input type="text" onblur="setIpTV(this.value)" id="ipTV" class="form-control" placeholder="192.168.0.1" name="ipTV" />
+              <span class="help-block"><small>Cliquez ailleurs pour valider</small></span>
+            </div>
+          </form>
+
           <div class="row">
-            <div class="btn-group">
-              <span class="btn btn-info btn-lg" onclick="performAction('info')">Info</span>
-              <span class="btn btn-danger btn-lg" onclick="performAction('return')">Retour</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-xs-4">
-              <span class="btn btn-default btn-lg btn-block" onclick="performAction('1')">1</span>
-            </div>
-            <div class="col-sm-4 col-xs-4">
-              <span class="btn btn-default btn-lg btn-block" onclick="performAction('2')">2</span>
-            </div>
-            <div class="col-sm-4 col-xs-4">
-              <span class="btn btn-default btn-lg btn-block" onclick="performAction('3')">3</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-xs-4">
-              <span class="btn btn-default btn-lg btn-block" onclick="performAction('4')">4</span>
-            </div>
-            <div class="col-sm-4 col-xs-4">
-              <span class="btn btn-default btn-lg btn-block" onclick="performAction('5')">5</span>
-            </div>
-            <div class="col-sm-4 col-xs-4">
-              <span class="btn btn-default btn-lg btn-block" onclick="performAction('6')">6</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-xs-4">
-              <span class="btn btn-default btn-lg btn-block" onclick="performAction('7')">7</span>
-            </div>
-            <div class="col-sm-4 col-xs-4">
-              <span class="btn btn-default btn-lg btn-block" onclick="performAction('8')">8</span>
-            </div>
-            <div class="col-sm-4 col-xs-4">
-              <span class="btn btn-default btn-lg btn-block" onclick="performAction('9')">9</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-xs-4">
-              <div class="btn-group">
-                <span class="btn btn-default btn-lg" onclick="performAction('volMinus')">-</span>
-                <span class="btn btn-default btn-lg" onclick="performAction('volPlus')">+</span>
+            <div class="col-sm-12 col-xs-12">
+              <div class="btn-group pull-right mbl">
+                <button type="button" class="btn btn-info btn-lg" onclick="performAction('info')">
+                  <span class="glyphicon glyphicon-info-sign"></span>
+                </button>
+                <button type="button" class="btn btn-danger btn-lg" onclick="performAction('return')">
+                  <span class="glyphicon glyphicon-arrow-left"></span>
+                </button>
               </div>
             </div>
-            <div class="col-sm-4 col-xs-4">
-              <span class="btn btn-default btn-lg btn-block" onclick="performAction('0')">0</span>
+          </div>
+
+          <div class="remote-control">
+            <div class="row mbm">
+              <div class="col-sm-4 col-xs-4">
+                <div class="btn btn-default btn-lg btn-block" onclick="performAction('1')">1</div>
+              </div>
+              <div class="col-sm-4 col-xs-4">
+                <div class="btn btn-default btn-lg btn-block" onclick="performAction('2')">2</div>
+              </div>
+              <div class="col-sm-4 col-xs-4">
+                <div class="btn btn-default btn-lg btn-block" onclick="performAction('3')">3</div>
+              </div>
             </div>
-            <div class="col-sm-4 col-xs-4">
-              <div class="btn-group">
-                <span class="btn btn-default btn-lg" onclick="performAction('pMinus')">P-</span>
-                <span class="btn btn-default btn-lg" onclick="performAction('pPlus')">P+</span>
-                <span class="btn btn-default btn-lg" onclick="performAction('ok')">OK</span>
+            <div class="row mbm">
+              <div class="col-sm-4 col-xs-4">
+                <div class="btn btn-default btn-lg btn-block" onclick="performAction('4')">4</div>
+              </div>
+              <div class="col-sm-4 col-xs-4">
+                <div class="btn btn-default btn-lg btn-block" onclick="performAction('5')">5</div>
+              </div>
+              <div class="col-sm-4 col-xs-4">
+                <div class="btn btn-default btn-lg btn-block" onclick="performAction('6')">6</div>
+              </div>
+            </div>
+            <div class="row mbm">
+              <div class="col-sm-4 col-xs-4">
+                <div class="btn btn-default btn-lg btn-block" onclick="performAction('7')">7</div>
+              </div>
+              <div class="col-sm-4 col-xs-4">
+                <div class="btn btn-default btn-lg btn-block" onclick="performAction('8')">8</div>
+              </div>
+              <div class="col-sm-4 col-xs-4">
+                <div class="btn btn-default btn-lg btn-block" onclick="performAction('9')">9</div>
+              </div>
+            </div>
+            <div class="row mbl">
+              <div class="col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4">
+                <div class="btn btn-default btn-lg btn-block" onclick="performAction('0')">0</div>
+              </div>
+            </div>
+
+            <div class="row mbm">
+              <div class="col-sm-6 col-xs-6">
+                <div class="btn-group">
+                  <div class="btn btn-default btn-lg" onclick="performAction('volMinus')">-</div>
+                  <div class="btn btn-default btn-lg" onclick="performAction('volPlus')">+</div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-6">
+                <div class="btn-group pull-right">
+                  <div class="btn btn-default btn-lg" onclick="performAction('pMinus')">P-</div>
+                  <div class="btn btn-default btn-lg" onclick="performAction('pPlus')">P+</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 col-xs-12">
+                <div class="btn btn-success btn-lg btn-block" onclick="performAction('ok')">OK</div>
               </div>
             </div>
           </div>

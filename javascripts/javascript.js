@@ -19,63 +19,73 @@ var ipTV = '',
   'volPlus': '115'
 };
 
-$(function () {
-  if (localStorage) {
-    if (localStorage['ipTV'] === undefined) {
-      ipTV = prompt('Entrez l\'ip de votre décodeur TV orange');
+function setIpTV(i) {
+  if (i !== undefined) {
+    ipTV = i;
+
+    if (localStorage) {
       localStorage['ipTV'] = ipTV;
-    } else {
-      ipTV = localStorage['ipTV'];
     }
+  }
+}
+
+$(function () {
+  if ((localStorage && localStorage['ipTV'] === undefined) || (!localStorage)) {
+    setIpTV('192.168.0.1');
   } else {
-    ipTV = promt('Entrez l\'ip de votre décodeur TV orange');
+    setIpTV(localStorage['ipTV']);
   }
 
+  $('#ipTV').val(ipTV);
+
   $(window).keypress(function (e) {
-    console.log(e.which)
-    switch (e.which) {
-      case 13:
-        performAction('ok');
-        break;
-      case 45:
-        performAction('volMinus');
-        break;
-      case 48:
-        performAction(0);
-        break;
-      case 49:
-        performAction(1);
-        break;
-      case 50:
-        performAction(2);
-        break;
-      case 51:
-        performAction(3);
-        break;
-      case 52:
-        performAction(4);
-        break;
-      case 53:
-        performAction(5);
-        break;
-      case 54:
-        performAction(6);
-        break;
-      case 55:
-        performAction(7);
-        break;
-      case 56:
-        performAction(8);
-        break;
-      case 57:
-        performAction(9);
-        break;
-      case 63:
-        performAction('volPlus');
-        break;
-      case 114:
-        performAction('return');
-        break;
+    var tag = e.target.tagName.toLowerCase();
+
+    if (tag !== 'input') {
+      switch (e.which) {
+        case 13:
+          performAction('ok');
+          break;
+        case 45:
+          performAction('volMinus');
+          break;
+        case 48:
+          performAction(0);
+          break;
+        case 49:
+          performAction(1);
+          break;
+        case 50:
+          performAction(2);
+          break;
+        case 51:
+          performAction(3);
+          break;
+        case 52:
+          performAction(4);
+          break;
+        case 53:
+          performAction(5);
+          break;
+        case 54:
+          performAction(6);
+          break;
+        case 55:
+          performAction(7);
+          break;
+        case 56:
+          performAction(8);
+          break;
+        case 57:
+          performAction(9);
+          break;
+        case 63:
+          performAction('volPlus');
+          break;
+        case 114:
+          performAction('return');
+          break;
+      }
     }
   });
 });

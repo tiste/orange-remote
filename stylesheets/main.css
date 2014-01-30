@@ -1,329 +1,217 @@
 .visible {
-  display: inherit;
+    display: inherit !important;
+}
+
+.pull-left {
+    float: left !important;
 }
 
 .pull-center {
-  margin: auto;
+    margin: auto !important;
+}
+
+.pull-right {
+    float: right !important;
 }
 
 .max-width {
-  width: 100%;
-}
-
-.pos-absolute {
-  position: absolute;
-  z-index: 10;
+    width: 100%;
 }
 
 .pos-relative {
-  position: relative;
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
 }
 
 .pos-fixed {
-  position: fixed;
+    position: fixed;
 }
 
 .text-left {
-  text-align: left;
+    text-align: left;
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .text-right {
-  text-align: right;
+    text-align: right;
 }
 
 .text-justify {
-  text-align: justify;
+    text-align: justify;
 }
 
 .huge-margin {
-  margin-top: 70px;
-  margin-bottom: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .huge-padding {
-  padding-top: 70px;
-  padding-bottom: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-.ptn,
-.pvn,
-.pan {
-  padding-top: 0;
+.ptn {
+    padding-top: 0px;
 }
 
-
-.ptx,
-.pvx,
-.pax {
-  padding-top: 3px;
+.ptx {
+    padding-top: 3px;
 }
 
-
-.pts,
-.pvs,
-.pas {
-  padding-top: 5px;
+.pts {
+    padding-top: 5px;
 }
 
-
-.ptm,
-.pvm,
-.pam {
-  padding-top: 10px;
+.ptm {
+    padding-top: 10px;
 }
 
-
-.ptl,
-.pvl,
-.pal {
-  padding-top: 20px;
+.ptl {
+    padding-top: 20px;
 }
 
-
-.prn,
-.phn,
-.pan {
-  padding-right: 0;
+.prn {
+    padding-right: 0px;
 }
 
-
-.prx,
-.phx,
-.pax {
-  padding-right: 3px;
+.prx {
+    padding-right: 3px;
 }
 
-
-.prs,
-.phs,
-.pas {
-  padding-right: 5px;
+.prs {
+    padding-right: 5px;
 }
 
-
-.prm,
-.phm,
-.pam {
-  padding-right: 10px;
+.prm {
+    padding-right: 10px;
 }
 
-
-.prl,
-.phl,
-.pal {
-  padding-right: 20px;
+.prl {
+    padding-right: 20px;
 }
 
-
-.pbn,
-.pvn,
-.pan {
-  padding-bottom: 0;
+.pbn {
+    padding-bottom: 0px;
 }
 
-
-.pbx,
-.pvx,
-.pax {
-  padding-bottom: 3px;
+.pbx {
+    padding-bottom: 3px;
 }
 
-
-.pbs,
-.pvs,
-.pas {
-  padding-bottom: 5px;
+.pbs {
+    padding-bottom: 5px;
 }
 
-
-.pbm,
-.pvm,
-.pam {
-  padding-bottom: 10px;
+.pbm {
+    padding-bottom: 10px;
 }
 
-
-.pbl,
-.pvl,
-.pal {
-  padding-bottom: 20px;
+.pbl {
+    padding-bottom: 20px;
 }
 
-
-.pln,
-.phn,
-.pan {
-  padding-left: 0;
+.pln {
+    padding-left: 0px;
 }
 
-
-.plx,
-.phx,
-.pax {
-  padding-left: 3px;
+.plx {
+    padding-left: 3px;
 }
 
-
-.pls,
-.phs,
-.pas {
-  padding-left: 5px;
+.pls {
+    padding-left: 5px;
 }
 
-
-.plm,
-.phm,
-.pam {
-  padding-left: 10px;
+.plm {
+    padding-left: 10px;
 }
 
-
-.pll,
-.phl,
-.pal {
-  padding-left: 20px;
+.pll {
+    padding-left: 20px;
 }
 
-
-.mtn,
-.mvn,
-.man {
-  margin-top: 0px;
+.mtn {
+    margin-top: 0px;
 }
 
-
-.mtx,
-.mvx,
-.max {
-  margin-top: 3px;
+.mtx {
+    margin-top: 3px;
 }
 
-
-.mts,
-.mvs,
-.mas {
-  margin-top: 5px;
+.mts {
+    margin-top: 5px;
 }
 
-
-.mtm,
-.mvm,
-.mam {
-  margin-top: 10px;
+.mtm {
+    margin-top: 10px;
 }
 
-
-.mtl,
-.mvl,
-.mal {
-  margin-top: 20px;
+.mtl {
+    margin-top: 20px;
 }
 
-
-.mrn,
-.mhn,
-.man {
-  margin-right: 0px;
+.mrn {
+    margin-right: 0px;
 }
 
-
-.mrx,
-.mhx,
-.max {
-  margin-right: 3px;
+.mrx {
+    margin-right: 3px;
 }
 
-
-.mrs,
-.mhs,
-.mas {
-  margin-right: 5px;
+.mrs {
+    margin-right: 5px;
 }
 
-
-.mrm,
-.mhm,
-.mam {
-  margin-right: 10px;
+.mrm {
+    margin-right: 10px;
 }
 
-
-.mrl,
-.mhl,
-.mal {
-  margin-right: 20px;
+.mrl {
+    margin-right: 20px;
 }
 
-
-.mbn,
-.mvn,
-.man {
-  margin-bottom: 0px;
+.mbn {
+    margin-bottom: 0px;
 }
 
-
-.mbx,
-.mvx,
-.max {
-  margin-bottom: 3px;
+.mbx {
+    margin-bottom: 3px;
 }
 
-
-.mbs,
-.mvs,
-.mas {
-  margin-bottom: 5px;
+.mbs {
+    margin-bottom: 5px;
 }
 
-
-.mbm,
-.mvm,
-.mam {
-  margin-bottom: 10px;
+.mbm {
+    margin-bottom: 10px;
 }
 
-
-.mbl,
-.mvl,
-.mal {
-  margin-bottom: 20px;
+.mbl {
+    margin-bottom: 20px;
 }
 
-
-.mln,
-.mhn,
-.man {
-  margin-left: 0px;
+.mln {
+    margin-left: 0px;
 }
 
-
-.mlx,
-.mhx,
-.max {
-  margin-left: 3px;
+.mlx {
+    margin-left: 3px;
 }
 
-
-.mls,
-.mhs,
-.mas {
-  margin-left: 5px;
+.mls {
+    margin-left: 5px;
 }
 
-
-.mlm,
-.mhm,
-.mam {
-  margin-left: 10px;
+.mlm {
+    margin-left: 10px;
 }
 
-
-.mll,
-.mhl,
-.mal {
-  margin-left: 20px;
+.mll {
+    margin-left: 20px;
 }

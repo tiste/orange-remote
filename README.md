@@ -1,4 +1,4 @@
-# TV Commande
+# Orange Remote
 
 Remote control for Orange TV
 

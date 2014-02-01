@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="stylesheets/main.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
-  <body>
+  <body class="use-fastclick">
     <div class="container max-height">
       <div class="row max-height">
         <div class="col-md-3 col-sm-5 pull-center float-none palette-clouds max-height">
@@ -39,61 +39,61 @@
             <div class="remote-control">
               <div class="row mbm">
                 <div class="col-sm-4 col-xs-4">
-                  <div class="btn btn-default btn-lg btn-block" onclick="performAction('1')">1</div>
+                  <a class="btn btn-default btn-lg btn-block" href="#" onclick="performAction('1'); return false;">1</a>
                 </div>
                 <div class="col-sm-4 col-xs-4">
-                  <div class="btn btn-default btn-lg btn-block" onclick="performAction('2')">2</div>
+                  <a class="btn btn-default btn-lg btn-block" href="#" onclick="performAction('2'); return false;">2</a>
                 </div>
                 <div class="col-sm-4 col-xs-4">
-                  <div class="btn btn-default btn-lg btn-block" onclick="performAction('3')">3</div>
-                </div>
-              </div>
-              <div class="row mbm">
-                <div class="col-sm-4 col-xs-4">
-                  <div class="btn btn-default btn-lg btn-block" onclick="performAction('4')">4</div>
-                </div>
-                <div class="col-sm-4 col-xs-4">
-                  <div class="btn btn-default btn-lg btn-block" onclick="performAction('5')">5</div>
-                </div>
-                <div class="col-sm-4 col-xs-4">
-                  <div class="btn btn-default btn-lg btn-block" onclick="performAction('6')">6</div>
+                  <a class="btn btn-default btn-lg btn-block" href="#" onclick="performAction('3'); return false;">3</a>
                 </div>
               </div>
               <div class="row mbm">
                 <div class="col-sm-4 col-xs-4">
-                  <div class="btn btn-default btn-lg btn-block" onclick="performAction('7')">7</div>
+                  <a class="btn btn-default btn-lg btn-block" href="#" onclick="performAction('4'); return false;">4</a>
                 </div>
                 <div class="col-sm-4 col-xs-4">
-                  <div class="btn btn-default btn-lg btn-block" onclick="performAction('8')">8</div>
+                  <a class="btn btn-default btn-lg btn-block" href="#" onclick="performAction('5'); return false;">5</a>
                 </div>
                 <div class="col-sm-4 col-xs-4">
-                  <div class="btn btn-default btn-lg btn-block" onclick="performAction('9')">9</div>
+                  <a class="btn btn-default btn-lg btn-block" href="#" onclick="performAction('6'); return false;">6</a>
+                </div>
+              </div>
+              <div class="row mbm">
+                <div class="col-sm-4 col-xs-4">
+                  <a class="btn btn-default btn-lg btn-block" href="#" onclick="performAction('7'); return false;">7</a>
+                </div>
+                <div class="col-sm-4 col-xs-4">
+                  <a class="btn btn-default btn-lg btn-block" href="#" onclick="performAction('8'); return false;">8</a>
+                </div>
+                <div class="col-sm-4 col-xs-4">
+                  <a class="btn btn-default btn-lg btn-block" href="#" onclick="performAction('9'); return false;">9</a>
                 </div>
               </div>
               <div class="row mbl">
                 <div class="col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4">
-                  <div class="btn btn-default btn-lg btn-block" onclick="performAction('0')">0</div>
+                  <a class="btn btn-default btn-lg btn-block" href="#" onclick="performAction('0'); return false;">0</a>
                 </div>
               </div>
 
               <div class="row mbm">
                 <div class="col-sm-6 col-xs-6">
                   <div class="btn-group">
-                    <div class="btn btn-default btn-lg" onclick="performAction('volMinus')">-</div>
-                    <div class="btn btn-default btn-lg" onclick="performAction('volPlus')">+</div>
+                    <a class="btn btn-default btn-lg" href="#" onclick="performAction('volMinus'); return false;">-</a>
+                    <a class="btn btn-default btn-lg" href="#" onclick="performAction('volPlus'); return false;">+</a>
                   </div>
                 </div>
                 <div class="col-sm-6 col-xs-6">
                   <div class="btn-group pull-right">
-                    <div class="btn btn-default btn-lg" onclick="performAction('pMinus')">P-</div>
-                    <div class="btn btn-default btn-lg" onclick="performAction('pPlus')">P+</div>
+                    <a class="btn btn-default btn-lg" href="#" onclick="performAction('pMinus'); return false;">P-</a>
+                    <a class="btn btn-default btn-lg" href="#" onclick="performAction('pPlus'); return false;">P+</a>
                   </div>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-sm-12 col-xs-12">
-                  <div class="btn btn-success btn-lg btn-block" onclick="performAction('ok')">OK</div>
+                  <a class="btn btn-success btn-lg btn-block" href="#" onclick="performAction('ok'); return false;">OK</a>
                 </div>
               </div>
             </div>
@@ -103,6 +103,7 @@
     </div>
 
     <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/x1024/jquery-fastbutton/master/bin/fastbutton.js"></script>
     <script type="text/javascript" src="javascripts/javascript.js"></script>
   </body>
 </html>
